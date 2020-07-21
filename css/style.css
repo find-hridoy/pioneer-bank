@@ -1,0 +1,35 @@
+body {
+    padding: 100px;
+}
+
+/* ======= Login Area ====== */
+.submit-area {
+    margin-top: 50px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px gray;
+    padding: 40px;
+}
+
+/* ======= Transection Area ====== */
+#transection-area {
+    display: none;
+}
+
+.status {
+    margin: 0 20px;
+    padding: 20px;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.diposit {
+    background-color: #5F4ECC;
+}
+
+.withdraw {
+    background-color: #F79777;
+}
+
+.balance {
+    background-color: #ED9D05;
+}
