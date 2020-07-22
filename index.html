@@ -1,99 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pioneer Bank</title>
-    <!-- Bootstrap Css Link -->
-    <link rel="stylesheet" href="css/bootstrap/css/bootstrap-4.5.0.min.css" />
-    <!-- Custom Css Link -->
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
 
-  <body>
-    <!------------------ Login Area Start ----------------->
-    <div id="login-area">
-      <h1 class="text-center">Welcome to Pioneer Bank</h1>
-      <div class="submit-area">
-        <h4 class="mb-4">Login</h4>
-        <input
-          class="form-control"
-          type="email"
-          name=""
-          id=""
-          placeholder="Email"
-        />
-        <br />
-        <input
-          class="form-control"
-          type="password"
-          name=""
-          id=""
-          placeholder="Password"
-        />
-        <br />
-        <button id="login" class="btn btn-success">Login</button>
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pioneer Bank</title>
+  <!-- Bootstrap Css Link -->
+  <link rel="stylesheet" href="css/bootstrap/css/bootstrap-4.5.0.min.css" />
+  <!-- Custom Css Link -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <!------------------ Login Area Start ----------------->
+  <div id="login-area">
+    <h1 class="text-center">Welcome to Pioneer Bank</h1>
+    <div class="submit-area">
+      <h4 class="mb-4">Login</h4>
+      <input class="form-control" type="email" name="" id="" placeholder="Email" />
+      <br />
+      <input class="form-control" type="password" name="" id="" placeholder="Password" />
+      <br />
+      <button id="login" class="btn btn-success">Login</button>
     </div>
-    <!------------------ Login Area End ----------------->
+  </div>
+  <!------------------ Login Area End ----------------->
 
-    <!------------------ Transection Area Start ----------------->
-    <div id="transection-area">
-      <!-- First Part -->
-      <div class="row">
-        <div class="col-md-4">
-          <div class="status diposit">
-            <h5>Diposit</h5>
-            <h2>$ <span id="currentDiposit">00</span></h2>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="status withdraw">
-            <h5>Withdraw</h5>
-            <h2>$00</h2>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="status balance">
-            <h5>Balance</h5>
-            <h2>$1240</h2>
-          </div>
+  <!------------------ Transection Area Start ----------------->
+  <div id="transection-area">
+    <!-- First Part -->
+    <div class="row">
+      <div class="col-md-4">
+        <div class="status deposit">
+          <h5>Deposit</h5>
+          <h2>$ <span id="currentDeposit">00</span></h2>
         </div>
       </div>
-      <!-- Second Part -->
-      <div class="row">
-        <div class="col-md-6">
-          <div class="submit-area">
-            <h3 class="mb-4">Diposit</h3>
-            <input
-              type="text"
-              id="dipositAmount"
-              class="form-control"
-              placeholder="$ amount you want to diposit"
-            />
-            <br />
-            <button id="addDiposit" class="btn btn-success">Diposit</button>
-          </div>
+      <div class="col-md-4">
+        <div class="status withdraw">
+          <h5>Withdraw</h5>
+          <h2>$ <span id="currentWithdraw">00</span></h2>
         </div>
-        <div class="col-md-6">
-          <div class="submit-area">
-            <h3 class="mb-4">Withdraw</h3>
-            <input
-              type="text"
-              class="form-control"
-              placeholder="$ amount you want to withdraw"
-            />
-            <br />
-            <button class="btn btn-success">Withdraw</button>
-          </div>
+      </div>
+      <div class="col-md-4">
+        <div class="status balance">
+          <h5>Balance</h5>
+          <h2>$ <span id="currentBalance">1240</span></h2>
         </div>
       </div>
     </div>
-    <!------------------ Transection Area End ----------------->
-    <!-- jQuery, Popper & Bootstrap Js Link -->
-    <script src="css/bootstrap/js/jquery-3.5.1.slim.min.js"></script>
-    <script src="css/bootstrap/js/popper.js@1.16.0.min.js"></script>
-    <script src="css/bootstrap/js/bootstrap-4.5.0.min.js"></script>
-    <script src="./css/bootstrap/js/custom.js"></script>
-  </body>
+    <!-- Second Part -->
+    <div class="row">
+      <div class="col-md-6">
+        <div class="submit-area">
+          <h3 class="mb-4">deposit</h3>
+          <input type="text" id="depositAmount" class="form-control" placeholder="$ amount you want to deposit" />
+          <br />
+          <button id="addDeposit" class="btn btn-success">deposit</button>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="submit-area">
+          <h3 class="mb-4">Withdraw</h3>
+          <input type="text" id="withdrawAmount" class="form-control" placeholder="$ amount you want to withdraw" />
+          <br />
+          <button id="addWithdraw" class="btn btn-success">Withdraw</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!------------------ Transection Area End ----------------->
+  <!-- jQuery, Popper & Bootstrap Js Link -->
+  <script src="css/bootstrap/js/jquery-3.5.1.slim.min.js"></script>
+  <script src="css/bootstrap/js/popper.js@1.16.0.min.js"></script>
+  <script src="css/bootstrap/js/bootstrap-4.5.0.min.js"></script>
+  <script src="./css/bootstrap/js/custom.js"></script>
+</body>
+
 </html>
